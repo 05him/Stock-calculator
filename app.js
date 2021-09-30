@@ -28,7 +28,7 @@ btn.addEventListener('click',()=>{
          p.style.color="black";
         if(initialValue>currentValue){
             loss= (initialValue-currentValue)*quantityValue;
-            lossPer=(loss/initialValue)*100;
+            lossPer=loss/(initialValue*quantityValue)*100;
             p.innerText="Ahh Sad!!😥😥You are in Loss"+"\n"+" Your loss is of ₹"+loss+", Your loss percentage is "+lossPer.toString().slice(0,5)+"%\n Feeling sad for you";
             sad[1].style.display="inline";
             if(lossPer>50){sad[0].style.display="inline";}
@@ -37,7 +37,7 @@ btn.addEventListener('click',()=>{
            }
         else if(currentValue>initialValue){
              profit= (currentValue-initialValue)*quantityValue;
-            profitPer=(profit/initialValue)*100;
+            profitPer=profit/(initialValue*quantityValue)*100;
                 p.innerText="Yeeeee!!!🤩🤩You are in Porfit"+"\n"+"Your profit is of ₹"+profit+", Your profit percentage is "+profitPer.toString().slice(0,5)+"%";
                 happy[1].style.display="inline";
                 if(profitPer>50){happy[0].style.display="inline";}
