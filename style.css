@@ -37,6 +37,7 @@ button {
   padding: 0.3rem;
   width: 100px;
   border-radius: 0.5rem;
+  cursor:pointer;
 }
 button:hover {
   font-size: 20px;
